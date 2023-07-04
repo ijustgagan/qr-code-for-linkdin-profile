@@ -1,0 +1,8 @@
+import pyqrcode
+import png
+
+website=""
+
+url= pyqrcode.create(website)
+url.png("profile_qrcode.png", scale=10)
+print("qr code succesfully created !")
